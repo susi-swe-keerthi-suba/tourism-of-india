@@ -1,0 +1,90 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" />
+
+
+    <title>Citizen form</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            background-image: url("backgroun3.jpg");
+            backgroound-size: 100px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        input[type="submit"] {
+            background-color: #008CBA;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #006F8E;
+            }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1 align="center">INDIAN CITIZEN INFO</h1>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="Aadhar">Aadhar Number:</label>
+        <input type="text" id="Aadhar" name="aadhar" required>
+
+        <label for="pan">PAN Number:</label>
+        <input type="text" id="pan" name="pan" required>
+
+        <label for="voter">Voter ID Number:</label>
+        <input type="text" id="voter" name="voter" required>
+
+        <label for="residence">Residence Status:</label>
+        <input type="text" id="residence" name="residence" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
